@@ -3,9 +3,7 @@
   :model="formDataConfig" >
   <slot :conditionFold="conditionFold"></slot>
   <a-row>
-  
     <a-col :offset="18" :span="8" >
-      <!-- {{ xs,sm,md,lg }} -->
       <a style="font-size: 16px" @click="conditionFold=!conditionFold">
         <template v-if="conditionFold">
           <DownOutlined />
